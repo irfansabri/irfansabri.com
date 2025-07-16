@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Irfan's Hobby Site</title>
+  <link rel="stylesheet" href="../css/index.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+	  <img src="../img/Rectangle 24.png">
+		   </div>
+    <ul class="nav-links">
+      <li><a href="index.html">MAIN</a></li>
+      <li><a href="../../New folder/html/history.html">HISTORY</a></li>
+      <li><a href="../../pineng/html/pineng.html">PINENG</a></li>
+      <li><a href="../../johor/html/johor.html">JOHOR</a></li>
+      <li><a href="../../tti/html/terengganu.html">TERENGGANU</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Slider -->
+  <div class="slider">
+    <img src="../img/slider1.jpg" class="slide active">
+    <img src= "../img/photo_2025-07-06_01-18-11.jpg" class="slide">
+    <img src= "../img/gambar 1.jpg" class="slide">
+    <img src= "../img/gambar2.jpg" class="slide">
+    <img src= "../img/slider5.jpg" class="slide">
+	</div>
+
+  <!-- Intro Text -->
+  <section class="about">
+    <p>
+      HI, This is me Irfan...<br>
+	  I lived in Terengganu, near to the river... <br>
+      Basically my hobby is kayaking or rowing boat...<br>
+      I do enroll in dragon boat race a lot.. Do you guys know what and how dragon boat is?
+      <br>
+      Click <a href="../../New folder/html/history.html" class="learn-more">Learn More</a> to know more about dragon boat
+    </p>
+  </section>
+
+  <!-- Photos Section -->
+  <section class="photos">
+    <img src="../img/gambar 1.jpg" alt="Race 1">
+    <img src="../img/gambar2.jpg" alt="Race 2">
+  </section>
+
+  <section class="photos-caption">
+    <p>I have shared some photos of 3 races that I’ve joined below.... so feel free to take a look &lt;3</p>
+  </section>
+
+  <!-- Hobby Gallery -->
+  <section class="event-links">
+  <div class="event-card">
+	  <a href="../../johor/html/johor.html">
+      <img src="../img/johor.jpg" alt="Race 3">
+      <p>Muar International Dragon Boat Regatta<br>2023</p>
+	  </a>
+    </div>
+    <div class="event-card">
+		<a href="../../pineng/html/pineng.html"> 
+      <img src="../img/pineng.jpg" alt="Race 4">
+      <p>Penang International Dragon Boat Regatta<br>2023</p>
+		</a>
+    </div>
+   <div class="event-card">
+	   <a href="../../tti/html/terengganu.html"> 
+       <img src="../img/photo_2025-07-17_03-17-53.jpg" alt="Race 5">
+	   <p>Terengganu Water Sport Festival</p>
+		</a>
+    </div>
+  </section>
+
+  <!-- Footer Contact -->
+  <footer>
+    <p>Contact:</p>
+    <div class="social">
+      <a href="https://www.instagram.com/irfansabri1906._" target="_blank">📸 Instagram</a>
+      <a href="https://www.facebook.com/Muhammad Irfan" target="_blank">👤 Facebook</a>
+      <a href="https://twitter.com/ipppannnn" target="_blank">🐦 Twitter</a>
+      <a href="mailto:irfansabri1906@gmail.com" target="_blank">✉️ irfansabri1906@gmail.com</a>
+    </div>
+  </footer>
+
+  <script>
+    // Auto Slide Script
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 3000);
+  </script>
+
+</body>
+</html>
