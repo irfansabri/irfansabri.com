@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Penang Regatta Layout</title>
+  <link rel="stylesheet" href="css/pineng.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+		<img src="img/Rectangle 24.png">
+		</div>
+      <ul class="nav-links">
+        <li><a href="index.html">MAIN</a></li>
+        <li><a href="history.html">HISTORY</a></li>
+        <li><a href="pineng.html">PINENG</a></li>
+        <li><a href="johor.html">JOHOR</a></li>
+        <li><a href="terengganu.html">TERENGGANU</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <img src="img/PIDB2023 (1).jpg" alt="Banner" />
+  </section>
+
+    <section class="story">
+      <div class="box">
+        <img src="img/photo_2025-07-03_03-42-33.jpg" alt="Participant">
+        <p>I used to participate in Junior Open U24 (400m) in Pineng International Dragon Boat Regatta that has been conducted on Disember 2023 at Tasik Dam, Teluk Bahang, Pineng </p>
+      </div>
+
+      <div class="box">
+        <p>Alhamdulillah, after several very tough match, we manage to win at 3rd place from 12th competence from different state and country... It is a good race for us to gaining some new knowledge and experiences.</p>
+        <img src="img/photo_2025-07-06_00-14-04.jpg" alt="Trophy">
+      </div>
+
+      <div class="box">
+        <p>Other than that, I do get chances to make a new friends with other teams that come from international country such as HongKong, China, Brunei and more... I am gladly happy to use this chances to make a new friends with them as we can exchange souvenir, knowledge, manners and ethics</p>
+      </div>
+    </section>
+	
+<main>
+    <section class="slider">
+      <div class="slider-wrapper">
+        <img src="img/photo_2025-07-03_04-01-07.jpg" class="slide active" alt="Slider 1">
+        <img src="img/photo_2025-07-17_00-12-13.jpg" class="slide" alt="Slider 2">
+        <img src="img/photo_2025-07-17_00-12-15.jpg" class="slide" alt="Slider 3">
+        <img src="img/photo_2025-07-17_00-12-19.jpg" class="slide" alt="Slider 4">
+        <img src="img/photo_2025-07-03_03-46-20.jpg" class="slide" alt="Slider 5">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact:</p>
+   <a href="https://www.instagram.com/irfansabri1906._" target="_blank">📸 Instagram</a>
+      <a href="https://www.facebook.com/Muhammad Irfan" target="_blank">👤 Facebook</a>
+      <a href="https://twitter.com/ipppannnn" target="_blank">🐦 Twitter</a>
+      <a href="mailto:irfansabri1906@gmail.com" target="_blank">✉️ irfansabri1906@gmail.com</a>
+  </footer>
+
+  <script>
+    // Auto slider logic
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 3000);
+  </script>
+
+</body>
+</html>
