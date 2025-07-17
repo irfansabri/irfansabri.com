@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Penang Regatta Layout</title>
+  <link rel="stylesheet" href="../css/johor.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+		<img src="../img/Rectangle 24.png">
+		</div>
+      <ul class="nav-links">
+        <li><a href="../../figma/html/index.html">MAIN</a></li>
+        <li><a href="../../New folder/html/history.html">HISTORY</a></li>
+        <li><a href="../../pineng/html/pineng.html">PINENG</a></li>
+        <li><a href="johor.html">JOHOR</a></li>
+        <li><a href="../../tti/html/terengganu.html">TERENGGANU</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <img src="../img/JOHOR REGATTA.png" alt="Banner" />
+  </section>
+
+    <section class="story">
+      <div class="box">
+        <img src="../img/photo_2025-07-06_01-12-02.jpg" alt="Participant">
+        <p>In this race, it was a very memorable race cus the river current was crazy!! it was tough race when you need to rowing against the current.. I am proudly representative as a Terengganu athlete to finished the race at 3rd place in 400m Open Category. </p>
+      </div>
+
+      <div class="box">
+        <p>Alhamdulillah, after several very tough match, we manage to win at 3rd place from 12th competence from different state and country... It is a good race for us to gaining some new knowledge and experiences.</p>
+        <img src="../img/photo_2025-07-06_01-14-40.jpg" alt="Trophy">
+      </div>
+
+     
+    </section>
+	
+<main>
+    <section class="slider">
+      <div class="slider-wrapper">
+        <img src="../img/photo_2025-07-06_01-15-20.jpg" class="slide active" alt="Slider 1">
+        <img src="../img/photo_2025-07-06_01-14-09.jpg" class="slide" alt="Slider 2">
+        <img src="../img/photo_2025-07-06_01-15-20.jpg" class="slide" alt="Slider 3">
+        <img src="../img/photo_2025-07-06_01-14-09.jpg" class="slide" alt="Slider 4">
+        <img src="../img/photo_2025-07-06_01-15-20.jpg" class="slide" alt="Slider 5">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact:</p>
+    <a href="https://www.instagram.com/irfansabri1906._" target="_blank">📸 Instagram</a>
+      <a href="https://www.facebook.com/Muhammad Irfan" target="_blank">👤 Facebook</a>
+      <a href="https://twitter.com/ipppannnn" target="_blank">🐦 Twitter</a>
+      <a href="mailto:irfansabri1906@gmail.com" target="_blank">✉️ irfansabri1906@gmail.com</a>
+  </footer>
+
+  <script>
+    // Auto slider logic
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 3000);
+  </script>
+
+</body>
+</html>

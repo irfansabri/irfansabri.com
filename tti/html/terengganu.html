@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watersport Festival</title>
+  <link rel="stylesheet" href="../css/terengganu.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo"> 
+	  <img src= "../img/Rectangle 24.png"> 
+	  </div>
+    <nav>
+      <ul>
+        <li><a href="../../figma/html/index.html" class="nav-link">Main</a></li>
+        <li><a href="../../New folder/html/history.html" class="nav-link">History</a></li>
+        <li><a href="../../pineng/html/pineng.html" class="nav-link">Pineng</a></li>
+        <li><a href="../../johor/html/johor.html" class="nav-link">Johor</a></li>
+        <li><a href="terengganu.html" class="nav-link special">Terengganu</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <img src="../img/Terengganu watersport festival.jpg" alt="Banner" />
+  </section>
+
+  <section class="gallery">
+    <div class="gallery-grid">
+      <img src="../img/photo_2025-07-17_03-17-53.jpg" class="lightbox-trigger" alt="Photo 1" />
+      <img src="../img/photo_2025-07-06_01-18-11.jpg" class="lightbox-trigger" alt="Photo 2" />
+      <img src="../img/photo_2025-07-17_03-17-57.jpg" class="lightbox-trigger" alt="Photo 3" />
+      <img src="../img/photo_2025-07-17_03-17-55.jpg" class="lightbox-trigger" alt="Photo 4" />
+      <img src="../img/photo_2025-07-17_03-17-49.jpg" class="lightbox-trigger" alt="Photo 5" />
+      <img src="../img/photo_2025-07-17_03-18-01.jpg" class="lightbox-trigger" alt="Photo 6" />
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact:</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/irfansabri1906._" target="_blank">📸 Instagram</a>
+      <a href="https://www.facebook.com/Muhammad Irfan" target="_blank">👤 Facebook</a>
+      <a href="https://twitter.com/ipppannnn" target="_blank">🐦 Twitter</a>
+      <a href="mailto:irfansabri1906@gmail.com" target="_blank">✉️ irfansabri1906@gmail.com</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal">
+    <span id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Preview" />
+  </div>
+
+  <script>
+    const modal = document.getElementById('lightbox-modal');
+    const modalImg = document.getElementById('lightbox-img');
+    const closeBtn = document.getElementById('lightbox-close');
+
+    document.querySelectorAll('.lightbox-trigger').forEach(img => {
+      img.addEventListener('click', () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+      });
+    });
+
+    closeBtn.onclick = () => {
+      modal.style.display = "none";
+    }
+
+    modal.onclick = (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
