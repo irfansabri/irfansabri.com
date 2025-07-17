@@ -1,4 +1,4 @@
-/* === GENERAL === */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   text-align: center;
 }
 
-/* === NAVBAR === */
+
 .navbar {
   background-color: #003366;
   display: flex;
@@ -40,7 +40,7 @@ body {
   color: yellow;
 }
 
-/* === INTRO SECTION === */
+
 .intro-section {
   text-align: center;
   padding: 30px 15px;
@@ -56,7 +56,6 @@ body {
   height: auto;
 }
 
-/* === INFO BOX === */
 .info-box {
   background: rgba(0, 86, 179, 0.9);
   margin: 20px;
@@ -69,7 +68,7 @@ body {
   line-height: 1.6;
 }
 
-/* === GALLERY === */
+
 .gallery {
   display: flex;
   justify-content: space-around;
@@ -83,7 +82,7 @@ body {
   border-radius: 5px;
 }
 
-/* === FOOTER === */
+
 footer {
   background-color: #0b1e3c;
   text-align: center;
